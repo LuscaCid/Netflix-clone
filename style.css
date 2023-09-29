@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    
+    
+}
+.bg-img{
+    height: 100vh;
+    background-image: url('images/BR-pt-20230925-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body{
+    background: rgb(31, 31, 31);
+    
+}
+:root{
+    font-size: 62.5%;
+}
+.sr-only{
+    position: absolute;
+    margin: -1px;
+    padding: -1px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+}
+.front-view{
+    height: 100vh;
+    background: radial-gradient(#b4b2b209 , #000000fa);
+    padding: 2rem 16rem;
+}
+
+header #logo{
+    width: 160px;
+    height: fit-content;
+}
+header{
+    max-height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    color: white;
+}
+header select::before{
+    content: '';
+    background-image: url("./assets/translate-bold-svgrepo-com.svg");
+    position: absolute;
+    z-index: -1;
+}
+header select{
+    background: none;
+    color: white;
+    padding: 0 1.5rem;
+    border-radius: .5rem;
+    border: 1px solid rgb(167, 167, 167);
+}
+.side-buttons-header{
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    gap: 1rem;
+}
+.side-buttons-header button{
+    border-radius: .5rem;
+    background: red;
+    color: white;
+    font-size: 1.6rem;
+    padding: 0 1.5rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+
+}
+.side-buttons-header button:hover{
+    background: rgb(184, 0, 0);
+}
+.primary-content{
+    margin-top: 15rem;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+.primary-content h1{
+    font-size: 4.5rem;
+}
+.primary-content h2{
+    font-weight: 400;
+    font-size: 2.3rem;
+    
+}
+.primary-content p{
+    font-size: 2.2rem
+}
+form .input-wrapper{
+    display: flex;
+    
+}
+
+form .input-wrapper input{
+    background: rgba(0, 0, 0, 0.418);
+    border: 1px solid grey;
+    padding: 1.8rem 2.4rem;
+    width: 100%;
+    font-size: 2rem;
+    border-radius: .7rem;
+}
+form{
+    margin: auto;
+    width: 76%;
+ 
+
+}
+#send-email-to{
+    background: red;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: .7rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    width: 30%;
+    margin-left: 1.2rem;
+}
+#send-email-to:hover{
+    background: rgb(160, 0, 0);
+
+}
