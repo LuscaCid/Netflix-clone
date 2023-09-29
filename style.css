@@ -11,11 +11,11 @@ body{
 .bg-img{
     height: 100vh;
     background-image: url('images/BR-pt-20230925-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
 }
 body{
-    background: rgb(31, 31, 31);
+    background: rgb(0, 0, 0);
     
 }
 :root{
@@ -32,7 +32,7 @@ body{
 }
 .front-view{
     height: 100vh;
-    background: radial-gradient(#b4b2b209 , #000000fa);
+    background: radial-gradient(#dadada00 , #000000fa);
     padding: 2rem 16rem;
 }
 
@@ -53,14 +53,28 @@ header select::before{
     position: absolute;
     z-index: -1;
 }
-header select{
-    background: none;
-    color: white;
-    padding: 0 1.5rem;
+
+.translate{
+    filter: invert(1);
+    left: 1rem;
+    top: .4rem;
+    position: absolute;
+}
+
+    
+
+header #languages{
+    text-align: right;
+    background: rgba(3, 3, 3, 0.438);
+    
+    color: rgb(248, 248, 248);
+    padding: 0 3.9rem;
     border-radius: .5rem;
     border: 1px solid rgb(167, 167, 167);
 }
 .side-buttons-header{
+    width: fit-content;
+    position: relative;
     display: flex;
     flex-direction: row;
     height: 40px;
@@ -82,6 +96,7 @@ header select{
 }
 .primary-content{
     margin-top: 15rem;
+    margin-bottom: 12rem;
     text-align: center;
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -103,7 +118,7 @@ header select{
 }
 form .input-wrapper{
     display: flex;
-    
+    margin-bottom: 12rem;
 }
 
 form .input-wrapper input{
@@ -117,9 +132,9 @@ form .input-wrapper input{
     font-family: 'Poppins',sans-serif;
 }
 form{
-    margin: auto;
+    margin: 0 auto ;
     width: 76%;
- 
+    margin-bottom: 10rem;
 
 }
 #send-email-to{
@@ -136,4 +151,66 @@ form{
 #send-email-to:hover{
     background: rgb(160, 0, 0);
 
+}
+.purple-card{
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    display: flex;
+    background: radial-gradient( rgb(128, 9, 45), rgba(8, 8, 99, 0.959));
+    width: 80%;
+    padding: 2.4rem 8rem;
+    border-radius: .8rem;
+    margin: auto;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    
+
+}
+.purple-card h2{
+    font-size: 2.6rem;
+}
+.purple-card p, .purple-card a{
+    font-size: 1.6rem;
+
+}
+.purple-card a {
+    margin-top: 1.5rem;
+    line-height: -2rem;
+    display: flex;
+    align-items: baseline;
+    color: #4d9af1fa;
+    font-weight: 700;
+}
+.purple-card a img{
+    width: 2rem;
+}
+.secoes{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 18rem 0;
+    color: white;
+}
+.secao:nth-child(odd){
+    display: flex;
+    flex-direction: row-reverse;
+}
+.secao:nth-child(even){
+    flex-direction: row;
+}
+.secao{
+    padding: 2rem 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: .6rem solid rgb(77, 77, 77);
+}
+.secao h1{
+    font-size: 4.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+.secao p{
+    font-size: 2.2rem;
+    font-family: 'Poppins', sans-serif;
 }
