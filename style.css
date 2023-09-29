@@ -5,8 +5,14 @@
 }
 body{
     
+}
+
+body{
+    background: rgb(0, 0, 0);
     
-    
+}
+:root{
+    font-size: 62.5%;
 }
 .bg-img{
     height: 100vh;
@@ -14,13 +20,6 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     
-}
-body{
-    background: rgb(0, 0, 0);
-    
-}
-:root{
-    font-size: 62.5%;
 }
 .sr-only{
     position: absolute;
@@ -123,7 +122,7 @@ form .input-wrapper{
 }
 
 form .input-wrapper input{
-    background: rgba(0, 0, 0, 0.418);
+    background: rgba(0, 0, 0, 0.623);
     border: 1px solid grey;
     padding: 1.8rem 2.4rem;
     width: 100%;
@@ -215,4 +214,34 @@ form{
 .secao p{
     font-size: 2.2rem;
     font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 66rem){
+    .front-view{
+        padding-left: 2rem ;
+        padding-right: 2rem;
+    }
+    .primary-content h1{
+        font-size: 3.2rem;
+
+    }
+    .primary-content h2{
+        
+    }
+    .side-buttons-header{
+        flex-direction: column-reverse;
+    }
+    .secao{
+        flex-direction: column;
+    }
+    .secao .texts h1{
+        font-size: 3.2rem;
+    }
+    .secao .texts p{
+        font-size: 1.4rem;
+    }
+    .secao img{
+        width: 220px;
+        
+    }
 }
