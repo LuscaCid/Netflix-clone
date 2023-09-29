@@ -64,7 +64,7 @@ header select::before{
     
 
 header #languages{
-    text-align: right;
+    text-align: center;
     background: rgba(3, 3, 3, 0.438);
     
     color: rgb(248, 248, 248);
@@ -95,7 +95,7 @@ header #languages{
     background: rgb(184, 0, 0);
 }
 .primary-content{
-    margin-top: 15rem;
+    margin-top: 17rem;
     margin-bottom: 12rem;
     text-align: center;
     color: white;
