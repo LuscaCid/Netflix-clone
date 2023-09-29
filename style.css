@@ -113,6 +113,8 @@ form .input-wrapper input{
     width: 100%;
     font-size: 2rem;
     border-radius: .7rem;
+    color: white;
+    font-family: 'Poppins',sans-serif;
 }
 form{
     margin: auto;
