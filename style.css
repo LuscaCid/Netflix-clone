@@ -34,15 +34,15 @@ body{
 .front-view{
     height: 100vh;
     background: radial-gradient(#dadada00 , #000000fa);
-    padding: 2rem 16rem;
+    padding: 2.5rem 16rem;
 }
 
 header #logo{
-    width: 160px;
+    width: 147px;
     height: fit-content;
 }
 header{
-    max-height: 60px;
+    max-height: 40px;
     align-items: center;
     justify-content: space-between;
     display: flex;
@@ -78,15 +78,15 @@ header #languages{
     position: relative;
     display: flex;
     flex-direction: row;
-    height: 40px;
+    height: 36px;
     gap: 1rem;
 }
 .side-buttons-header button{
     border-radius: .5rem;
     background: red;
     color: white;
-    font-size: 1.6rem;
-    padding: 0 1.5rem;
+    font-size: 1.4rem;
+    padding: 0 1.7rem;
     font-weight: 700;
     border: none;
     cursor: pointer;
