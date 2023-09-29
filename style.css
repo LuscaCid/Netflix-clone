@@ -11,8 +11,9 @@ body{
 .bg-img{
     height: 100vh;
     background-image: url('images/BR-pt-20230925-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
+    
 }
 body{
     background: rgb(0, 0, 0);
