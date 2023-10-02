@@ -3,9 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    
-}
 
 body{
     background: rgb(0, 0, 0);
@@ -138,7 +135,7 @@ form{
 
 }
 #send-email-to{
-    background: red;
+    background: rgb(224, 2, 2);
     color: white;
     font-weight: bold;
     border: none;
@@ -159,14 +156,18 @@ form{
     gap: 2rem;
     display: flex;
     background: radial-gradient( rgb(128, 9, 45), rgba(8, 8, 99, 0.959));
-    width: 80%;
+    width: 90%;
     padding: 2.4rem 8rem;
     border-radius: .8rem;
     margin: auto;
+    
     color: white;
     font-family: 'Poppins',sans-serif;
     
 
+}
+.bg-img{
+    margin-bottom: 22rem;
 }
 .purple-card h2{
     font-size: 2.6rem;
@@ -190,11 +191,11 @@ form{
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    margin: 18rem 0;
+ 
     color: white;
 }
 .secao:nth-child(odd){
-    display: flex;
+    
     flex-direction: row-reverse;
 }
 .secao:nth-child(even){
@@ -217,31 +218,91 @@ form{
 }
 
 @media (max-width: 66rem){
+    header #logo{
+        width: 100px;
+    }
+    .primary-content h2 , .primary-content p{   
+        font-size: 1.6rem;
+
+    }
+    .primary-content{
+        margin-top: 4rem ;
+    }
     .front-view{
         padding-left: 2rem ;
         padding-right: 2rem;
     }
     .primary-content h1{
-        font-size: 3.2rem;
+        font-size: 3rem;
 
     }
-    .primary-content h2{
+    #languages{
         
+        width: 5rem;
     }
-    .side-buttons-header{
-        flex-direction: column-reverse;
-    }
+
     .secao{
+        
         flex-direction: column;
+    }
+    .secao .texts {
+        width: 100%;
     }
     .secao .texts h1{
         font-size: 3.2rem;
+        width: 100%;
+        
     }
     .secao .texts p{
         font-size: 1.4rem;
     }
     .secao img{
-        width: 220px;
+        width: 300px;
         
+    }
+    .input-wrapper{
+        margin-bottom: 6rem;
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        
+        gap: 1rem;
+        align-items: center;
+    }
+    #email-send{
+        padding: .4rem .9rem;
+    }
+    #send-email-to{
+        width: 50%;
+        padding: 1rem 0;
+        
+    }
+    .purple-card{
+        
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 2rem;
+        align-items: flex-start;
+        box-shadow: 0 1rem 2rem -1rem rgb(255,255,255 0.4);
+    }
+    #balde{
+        margin-top: -4rem;
+    }
+    .bg-img{
+        margin-bottom: 5rem;
+        height: 69vh;
+    }
+    .card-texts h2{
+        font-size: 2rem;
+    }
+    .secoes{
+        margin: 3rem 2rem;
+    }
+    .secao{
+        width: 100%;
+        padding: 1rem;
+        display: block;
+        justify-content: center;
+        align-items: center
     }
 }
