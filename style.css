@@ -12,10 +12,10 @@ body{
     font-size: 62.5%;
 }
 .bg-img{
-    height: 100vh;
+    height: 115vh;
     background-image: url('images/BR-pt-20230925-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
+    
     
 }
 .sr-only{
@@ -28,8 +28,8 @@ body{
     clip: rect(0,0,0,0);
 }
 .front-view{
-    height: 100vh;
-    background: radial-gradient(#dadada00 , #000000fa);
+    height: 115vh;
+    background: radial-gradient(#dadada00 , #000000);
     padding: 2.5rem 16rem;
 }
 
@@ -113,38 +113,39 @@ header #languages{
 .primary-content p{
     font-size: 2.2rem
 }
-form .input-wrapper{
+.input-wrapper{
     display: flex;
     margin-bottom: 12rem;
 }
 
-form .input-wrapper input{
-    background: rgba(0, 0, 0, 0.623);
+.input-wrapper input{
+    background: rgba(24, 24, 24, 0.692);
     border: 1px solid grey;
-    padding: 1.8rem 2.4rem;
+    padding: 1.2rem 1.8rem;
     width: 100%;
     font-size: 2rem;
-    border-radius: .7rem;
+    border-radius: .4rem;
     color: white;
     font-family: 'Poppins',sans-serif;
 }
 form{
     margin: 0 auto ;
-    width: 76%;
+    width: 56%;
     margin-bottom: 10rem;
 
 }
-#send-email-to{
+#send-email-to, #send-email-to-account {
     background: rgb(224, 2, 2);
     color: white;
-    font-weight: bold;
+    font-weight: 400;
     border: none;
-    border-radius: .7rem;
+    border-radius: .4rem;
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
-    width: 30%;
+    width: 40%;
     margin-left: 1.2rem;
     cursor: pointer;
+    padding: 1rem 2rem;
 }
 #send-email-to:hover{
     background: rgb(160, 0, 0);
@@ -160,15 +161,13 @@ form{
     padding: 2.4rem 8rem;
     border-radius: .8rem;
     margin: auto;
-    
+    margin-top: -8rem;
     color: white;
     font-family: 'Poppins',sans-serif;
     
 
 }
-.bg-img{
-    margin-bottom: 22rem;
-}
+
 .purple-card h2{
     font-size: 2.6rem;
 }
@@ -216,6 +215,12 @@ form{
     font-size: 2.2rem;
     font-family: 'Poppins', sans-serif;
 }
+footer h1{
+    color: white;
+    text-align: center;
+
+}
+
 
 @media (max-width: 66rem){
     header #logo{
@@ -241,10 +246,14 @@ form{
         width: 5rem;
     }
 
-    .secao{
-        
+    
+    .secao:nth-child(odd){
         flex-direction: column;
     }
+    .secao:nth-child(even){
+        flex-direction: column;
+    }
+    
     .secao .texts {
         width: 100%;
     }
@@ -278,7 +287,7 @@ form{
         
     }
     .purple-card{
-        
+        margin-top: -3rem;
         display: flex;
         flex-direction: column;
         padding: 1rem 2rem;
@@ -290,7 +299,7 @@ form{
     }
     .bg-img{
         margin-bottom: 5rem;
-        height: 69vh;
+        height: 89vh;
     }
     .card-texts h2{
         font-size: 2rem;
@@ -299,10 +308,6 @@ form{
         margin: 3rem 2rem;
     }
     .secao{
-        width: 100%;
         padding: 1rem;
-        display: block;
-        justify-content: center;
-        align-items: center
     }
 }
