@@ -128,7 +128,7 @@ header #languages{
     color: white;
     font-family: 'Poppins',sans-serif;
 }
-form{
+#send-email{
     margin: 0 auto ;
     width: 56%;
     margin-bottom: 10rem;
@@ -215,13 +215,72 @@ form{
     font-size: 2.2rem;
     font-family: 'Poppins', sans-serif;
 }
-footer h1{
+
+
+.commom-questions{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 15rem;
+    gap: .6rem;
+}
+.commom-questions h1{
+    font-size: 4rem;
     color: white;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.commom-questions button{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    border: none;
+    background: rgb(51, 51, 51);
+    text-align: left;
+    font-size: 2.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+.commom-questions span{
+    font-size: 5rem;
+    font-weight: 400;
+}
+.commom-questions button:hover{
+    background: rgb(66, 66, 66);
+}
+.second-form{
+    
+}
+.second-form .input-wrapper{
+    align-items: center;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
 
 }
-
-
+.second-form input{
+    width: 90%;
+}
+.inputs #send-email-to-account{
+   width: 27%;
+    
+}
+.inputs{
+    
+    align-items: center;
+    width: 78%;
+    display: flex;
+    
+    gap: 1rem;
+    
+}
+.second-form label{
+    font-size: 1.8rem;
+    font-family: 'Poppins',sans-serif;
+    color: white;
+}
 @media (max-width: 66rem){
     header #logo{
         width: 100px;
@@ -309,5 +368,8 @@ footer h1{
     }
     .secao{
         padding: 1rem;
+    }
+    .commom-questions {
+        padding: 2rem 2rem;
     }
 }
